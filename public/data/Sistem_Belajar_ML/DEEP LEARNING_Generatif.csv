@@ -1,0 +1,8 @@
+﻿Model,Penjelasan Singkat
+**Generative Adversarial Network (GAN)**,"Dua jaringan ""bertarung"": satu membuat data palsu, satu mendeteksi palsunya. Hasil: gambar, suara, atau teks yang sangat realistis."
+**Variational Autoencoder (VAE)**,"Autoencoder yang belajar ""distribusi"" data, bisa membuat data baru yang mirip dengan data asli."
+**Diffusion Model**,"Belajar dengan cara ""menghilangkan noise"" secara bertahap. Dasar dari DALL-E, Midjourney, Stable Diffusion."
+**Flow-based Model**,Model generatif yang bisa menghitung probabilitas secara tepat. Lebih transparan tapi kompleks.
+**Energy-Based Model (EBM)**,"Mengukur ""seberapa cocok"" input dengan data yang dipelajari."
+**Boltzmann Machine**,Model probabilistik yang terinspirasi fisika. Dasar dari Restricted Boltzmann Machine.
+**Restricted Boltzmann Machine (RBM)**,Versi sederhana Boltzmann Machine. Dulu populer untuk rekomendasi (Netflix).

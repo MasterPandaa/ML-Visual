@@ -1,0 +1,73 @@
+﻿Model,Penjelasan Singkat
+**Graph Neural Network (GNN)**,"Belajar dari data yang berbentuk ""jaringan"" (graph). Contoh: jaringan sosial, molekul kimia, jaringan jalan."
+**Graph Convolutional Network (GCN)**,Versi CNN untuk data graph.
+**Graph Attention Network (GAT)**,GNN dengan mekanisme attention.
+**Capsule Network (CapsNet)**,"Alternatif CNN yang memahami ""hubungan spasial"" lebih baik. Dikembangkan oleh Geoffrey Hinton."
+**Neural Turing Machine (NTM)**,"Neural Network dengan ""memori eksternal."" Bisa belajar algoritma seperti komputer."
+**Differentiable Neural Computer (DNC)**,Penerus NTM dengan memori yang lebih terstruktur.
+**Neural Architecture Search (NAS)**,AI yang membuat arsitektur AI lain.
+**Extreme Learning Machine (ELM)**,"Neural Network dengan bobot acak di hidden layer, hanya latih output layer. Sangat cepat."
+**Echo State Network (ESN)**,"Jenis Reservoir Computing. Hidden layer tidak dilatih, hanya output layer. Cocok untuk data waktu."
+**Liquid State Machine (LSM)**,"Versi biologis ESN, terinspirasi dari cara kerja otak biologis."
+**Spiking Neural Network (SNN)**,"Neural Network yang ""berdetak"" seperti neuron biologis. Sangat hemat energi, cocok untuk hardware neuromorfik."
+**Neuromorphic Computing**,"Bukan model tunggal, tapi paradigma komputasi yang meniru otak biologis."
+**Kernel Ridge Regression**,"Ridge Regression yang menggunakan ""kernel trick"" untuk menangani hubungan non-linear."
+**Gaussian Process**,Model probabilistik yang sangat fleksibel. Memberikan prediksi beserta tingkat ketidakpastian. Sering dipakai di optimasi (Bayesian Optimization).
+**Relevance Vector Machine (RVM)**,Seperti SVM tapi lebih sparse (lebih sedikit vektor pendukung).
+**Least Angle Regression (LARS)**,"Algoritma regresi yang mirip ""forward selection"" tapi lebih efisien."
+**Orthogonal Matching Pursuit (OMP)**,Algoritma sparse recovery — mencari kombinasi paling sederhana yang menjelaskan data.
+**Factorization Machine (FM)**,Model untuk data dengan fitur yang sangat sparse. Populer di sistem rekomendasi.
+**Field-aware Factorization Machine (FFM)**,"Versi FM yang membedakan ""field"" atau kategori fitur. Juara di banyak kompetisi CTR (Click-Through Rate)."
+**Conditional Random Field (CRF)**,Model probabilistik untuk data berurutan/berlabel. Sering dipakai di Named Entity Recognition (NER).
+**Hidden Markov Model (HMM)**,"Model untuk data berurutan dengan ""keadaan tersembunyi."" Dulu populer untuk speech recognition."
+**Maximum Entropy Markov Model (MEMM)**,Versi HMM yang mempertimbangkan fitur observasi lebih fleksibel.
+**Markov Random Field (MRF)**,Model untuk data dengan dependensi antar variabel (seperti pixel di gambar).
+**Conditional Neural Field**,Kombinasi Neural Network dengan CRF.
+**Siamese Network**,Dua jaringan kembar yang membandingkan kesamaan. Cocok untuk verifikasi wajah (ini orang yang sama?).
+**Triplet Network**,"Versi Siamese yang membandingkan ""anchor, positif, negatif"" untuk belajar representasi yang lebih baik."
+**Prototypical Network**,"Belajar dari sedikit contoh (few-shot learning). Membandingkan data baru dengan ""prototipe"" setiap kelas."
+**Matching Network**,Few-shot learning dengan attention mechanism.
+**Relation Network**,"Belajar ""hubungan"" antar objek. Cocok untuk visual question answering."
+**Neural Ordinary Differential Equations (Neural ODE)**,"Mengganti lapisan diskrit dengan persamaan diferensial. Bisa membuat model yang ""kedalaman adaptif."""
+**Deep Equilibrium Model**,"Model yang mencari ""titik keseimbangan"" alih-alih menumpuk lapisan."
+**Hypernetwork**,Jaringan yang menghasilkan bobot untuk jaringan lain.
+**Meta-Learning (Learning to Learn)**,"Model yang belajar ""cara belajar"" dengan cepat dari sedikit data."
+**Model-Agnostic Meta-Learning (MAML)**,Algoritma meta-learning yang bisa diterapkan pada model apa pun.
+**Prototypical Matching Networks**,Kombinasi Prototypical + Matching untuk few-shot learning.
+**TabNet**,"Neural Network khusus untuk data tabel (seperti Excel), menggabungkan kekuatan deep learning dengan interpretabilitas."
+**Neural Additive Models (NAM)**,Neural Network yang bisa dijelaskan — setiap fitur diproses secara terpisah lalu dijumlahkan.
+**Self-Organizing Map (SOM)**,Mengorganisir data berdimensi tinggi ke grid 2D. Data yang mirip letaknya dekat.
+**Growing Neural Gas (GNG)**,SOM yang bisa menambah neuron secara dinamis.
+**Learning Vector Quantization (LVQ)**,Model berbasis prototype untuk klasifikasi.
+**Generalized Learning Vector Quantization (GLVQ)**,Versi LVQ yang lebih umum dan fleksibel.
+**Support Vector Clustering**,Menggunakan konsep SVM untuk clustering.
+**Spectral Clustering**,"Clustering yang menggunakan ""eigenvalue"" dari matriks similarity. Bisa menemukan kelompok non-bulat."
+**Affinity Propagation**,"Clustering yang tidak perlu tentukan jumlah kelompok. Setiap data ""mengirim pesan"" untuk menentukan ""perwakilan."""
+**Mean Shift**,"Clustering dengan mencari ""puncak kepadatan"" data."
+**BIRCH**,Clustering untuk data yang sangat besar. Membangun struktur pohon ringkas.
+**OPTICS**,Versi DBSCAN yang bisa menangani kepadatan bervariasi.
+**HDBSCAN**,Versi hierarchical dari DBSCAN. Sangat populer untuk clustering nyata.
+**Non-Negative Matrix Factorization (NMF)**,Memfaktorkan matriks menjadi dua matriks non-negatif. Sering dipakai untuk topic modeling.
+**Latent Dirichlet Allocation (LDA)**,"Model probabilistik untuk menemukan ""topik"" dalam dokumen."
+**Probabilistic Latent Semantic Analysis (pLSA)**,Pendahulu LDA untuk topic modeling.
+**Independent Component Analysis (ICA)**,Memisahkan sinyal yang bercampur. Contoh: memisahkan suara orang di pesta yang ramai (cocktail party problem).
+**Slow Feature Analysis (SFA)**,Mencari fitur yang berubah paling lambat dalam data waktu. Terinspirasi dari cara otak memproses informasi.
+**Canonical Correlation Analysis (CCA)**,Mencari hubungan antara dua set variabel. Contoh: hubungan antara nilai matematika dan fisika siswa.
+**Partial Least Squares (PLS)**,Seperti CCA tapi untuk prediksi.
+**Kernel PCA**,PCA yang bisa menangani hubungan non-linear dengan kernel trick.
+**Kernel K-Means**,K-Means dengan kernel trick untuk cluster non-bulat.
+**Multiple Kernel Learning**,Belajar kombinasi terbaik dari beberapa kernel.
+**Random Kitchen Sinks**,Aproksimasi kernel dengan fitur acak. Sangat cepat.
+**Nyström Method**,Cara lain untuk aproksimasi kernel dengan sampling.
+**Locality-Sensitive Hashing (LSH)**,"Teknik untuk mencari data yang mirip dengan sangat cepat. Bukan model ML murni, tapi sering dipakai bersama."
+**Word2Vec**,Mengubah kata menjadi vektor angka. Kata yang mirip letaknya dekat di ruang vektor.
+**GloVe**,Alternatif Word2Vec yang menggunakan statistik global korpus.
+**FastText**,Word2Vec yang memperhatikan sub-kata (morfem). Lebih baik untuk bahasa dengan banyak variasi kata.
+**Doc2Vec**,Versi Word2Vec untuk dokumen/kalimat lengkap.
+**Node2Vec / DeepWalk**,Word2Vec untuk node dalam graph.
+**LINE**,Seperti Node2Vec tapi memperhatikan local dan global structure.
+**SDNE (Structural Deep Network Embedding)**,Autoencoder untuk embedding graph.
+**NetMF**,Matrix factorization untuk network embedding.
+**Struc2Vec**,Embedding graph berdasarkan struktur hierarki.
+**GraphWave**,Embedding graph berdasarkan heat wavelet.
+**DNGR (Deep Neural Graph Representation)**,Autoencoder untuk graph dengan random surfing.

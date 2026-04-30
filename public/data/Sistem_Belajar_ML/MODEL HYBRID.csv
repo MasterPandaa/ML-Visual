@@ -1,0 +1,136 @@
+﻿Model,Penjelasan Singkat
+**Convolutional LSTM (ConvLSTM)**,Kombinasi CNN + LSTM. Cocok untuk data spatio-temporal (seperti prediksi cuaca radar).
+**3D CNN**,"CNN untuk data 3D (video, CT scan, MRI)."
+**PointNet / PointNet++**,Neural Network untuk data point cloud (seperti hasil scan LiDAR mobil otonom).
+**VoxelNet**,Mengubah point cloud menjadi voxel (kubus 3D) lalu diproses dengan 3D CNN.
+**Vision Transformer (ViT)**,"Menerapkan Transformer untuk gambar. Memecah gambar menjadi ""patch"" seperti kata dalam kalimat."
+**Swin Transformer**,Versi ViT yang lebih efisien dengan jendela geser (shifted windows).
+**DETR (DEtection TRansformer)**,Object detection dengan Transformer. Lebih sederhana dari CNN tradisional.
+**YOLO (You Only Look Once)**,Object detection yang sangat cepat. Bisa mendeteksi objek real-time.
+**SSD (Single Shot MultiBox Detector)**,Object detection alternatif YOLO.
+**Mask R-CNN**,Object detection + segmentasi (bisa membedakan setiap pixel objek).
+**U-Net**,"Arsitektur CNN berbentuk ""U"" untuk segmentasi gambar medis."
+**V-Net**,Versi 3D dari U-Net untuk segmentasi volume medis.
+**Pix2Pix**,GAN untuk image-to-image translation (misal: sketsa → foto).
+**CycleGAN**,GAN yang bisa menerjemahkan tanpa pasangan data (unsupervised image translation).
+**StyleGAN**,"GAN untuk menghasilkan wajah yang sangat realistis. Bisa mengontrol ""gaya"" gambar."
+**BigGAN**,GAN skala besar untuk gambar berkualitas tinggi.
+**T5 (Text-to-Text Transfer Transformer)**,Model Google yang mengubah semua tugas NLP menjadi format teks-ke-teks.
+**BERT (Bidirectional Encoder Representations from Transformers)**,Transformer yang membaca teks dari dua arah. Revolusi dalam pemahaman bahasa.
+**GPT (Generative Pre-trained Transformer)**,Transformer yang memprediksi kata berikutnya. Dasar dari ChatGPT.
+**RoBERTa**,Versi BERT yang dioptimasi lebih baik.
+**ALBERT**,"Versi ""ringan"" BERT dengan parameter lebih sedikit."
+**DistilBERT**,"BERT yang ""didistil"" — lebih kecil dan cepat dengan performa hampir sama."
+**Electra**,"Model yang belajar dengan mendeteksi kata yang ""salah"" dalam teks. Lebih efisien dari BERT."
+**DeBERTa**,Versi BERT dengan mekanisme attention yang lebih baik.
+**XLNet**,Kombinasi autoregressive + autoencoding. Bisa memahami konteks secara lebih fleksibel.
+**ERNIE (Baidu)**,Model bahasa Cina yang memperhatikan entitas dan pengetahuan.
+**LaMDA**,Model dialog dari Google.
+**PaLM / PaLM 2**,Model bahasa besar dari Google.
+**LLaMA**,Model bahasa open-source dari Meta.
+**Claude**,Model bahasa dari Anthropic dengan fokus keamanan.
+**Mistral / Mixtral**,Model open-source yang sangat efisien. Mixtral menggunakan Mixture of Experts.
+**Mixture of Experts (MoE)**,"Arsitektur di mana hanya sebagian ""ahli"" (expert network) yang aktif untuk setiap input. Lebih besar tapi lebih efisien."
+**Switch Transformer**,Implementasi MoE dari Google.
+**RetNet**,Alternatif Transformer yang lebih efisien secara komputasi.
+**RWKV**,Kombinasi kekuatan Transformer dengan efisiensi RNN.
+**Mamba / State Space Model (SSM)**,Arsitektur baru yang menggantikan attention dengan state space model. Sangat efisien untuk sequence panjang.
+**Hyena**,Alternatif attention yang lebih cepat untuk sequence sangat panjang.
+**Retrieval-Augmented Generation (RAG)**,Model yang menggabungkan generasi dengan pencarian informasi eksternal.
+**FLAN (Fine-tuned LAnguage Net)**,Model yang di-fine-tune dengan instruksi beragam.
+**InstructGPT / ChatGPT**,GPT yang di-align dengan instruksi manusia menggunakan RLHF (Reinforcement Learning from Human Feedback).
+**Constitutional AI**,"Cara melatih AI dengan ""konstitusi"" prinsip etika. Dipakai Claude."
+**NeRF (Neural Radiance Fields)**,Neural Network untuk merekonstruksi adegan 3D dari foto 2D.
+**Gaussian Splatting**,Alternatif NeRF yang lebih cepat untuk rendering 3D.
+**CLIP**,Model yang menggabungkan gambar dan teks. Bisa mencari gambar dari deskripsi teks.
+**DALL-E / DALL-E 2 / DALL-E 3**,Model yang membuat gambar dari teks.
+**Stable Diffusion**,Model diffusion open-source untuk membuat gambar dari teks.
+**Midjourney**,Model komersial untuk generasi gambar artistik.
+**Imagen**,Model Google untuk teks-ke-gambar.
+**Parti**,Model Google yang menggunakan Pathways untuk teks-ke-gambar.
+**MusicLM / MusicGen**,Model untuk membuat musik dari teks.
+**Whisper**,Model speech-to-text dari OpenAI. Sangat akurat untuk transkripsi.
+**Wav2Vec 2.0**,Model untuk belajar representasi suara tanpa label.
+**HuBERT**,Alternatif Wav2Vec untuk speech representation.
+**Tacotron 2 / VITS**,Text-to-speech (TTS) neural network.
+**Bark**,"Model TTS yang bisa meniru suara, emosi, bahkan musik."
+**DeepSpeech**,Speech recognition dari Mozilla.
+**Jasper / QuartzNet**,Model speech recognition yang sangat cepat.
+**Conformer**,Kombinasi CNN + Transformer untuk speech recognition.
+**Segment Anything Model (SAM)**,Model Meta untuk segmentasi objek apa pun dalam gambar.
+**DINO / DINOv2**,Model self-supervised learning untuk visi. Belajar representasi visual tanpa label.
+**MAE (Masked Autoencoder)**,Autoencoder untuk gambar yang menyembunyikan sebagian pixel.
+**BEiT**,Seperti BERT tapi untuk gambar.
+**Data2Vec**,"Framework self-supervised yang seragam untuk speech, vision, dan NLP."
+**ImageBind**,"Model yang menggabungkan 6 modalitas (gambar, teks, audio, depth, thermal, IMU)."
+**LLaVA**,Model vision-language yang menggabungkan LLM dengan vision encoder.
+**BLIP / BLIP-2**,Model untuk understanding dan generation gambar-teks.
+**InstructBLIP**,BLIP yang bisa diinstruksikan seperti ChatGPT untuk gambar.
+**MiniGPT-4**,Versi ringan GPT-4 untuk vision-language.
+**GPT-4V / GPT-4o**,Model multimodal dari OpenAI (teks + gambar + audio).
+**Gemini**,Model multimodal native dari Google.
+**RT-2**,Robot Transformer — model vision-language-action untuk robot.
+**ACT (Action Chunking with Transformers)**,Model untuk robot imitation learning.
+**Diffusion Policy**,Menggunakan diffusion model untuk belajar kebijakan robot.
+**Imitation Learning / Behavioral Cloning**,Robot belajar meniru aksi manusia.
+**Inverse Reinforcement Learning**,"Belajar ""reward function"" dari perilaku manusia."
+**Hindsight Experience Replay (HER)**,RL yang belajar dari kegagalan dengan mengubah tujuan secara retroaktif.
+**Model Predictive Control (MPC) dengan NN**,Menggunakan Neural Network untuk memprediksi dinamika sistem lalu mengoptimalkan kontrol.
+**Neural Operator**,Neural Network yang belajar operator matematika (seperti persamaan diferensial parsial).
+**Fourier Neural Operator (FNO)**,Neural Operator yang menggunakan transformasi Fourier. Sangat cepat untuk simulasi fisika.
+**Physics-Informed Neural Network (PINN)**,"Neural Network yang ""dihukum"" kalau melanggar hukum fisika. Digunakan untuk simulasi engineering."
+**DeepONet**,Neural Network untuk mempelajari operator antara dua ruang fungsi.
+**Symbolic Regression (PySR / AI Feynman)**,Mencari rumus matematika sederhana yang menjelaskan data.
+**Genetic Programming**,Menggunakan algoritma genetika untuk menemukan program/model.
+**Neuroevolution**,"Melatih Neural Network dengan algoritma evolusi, bukan gradient descent."
+**NEAT (NeuroEvolution of Augmenting Topologies)**,"Neuroevolution yang juga mengembangkan struktur jaringan, bukan hanya bobot."
+**HyperNEAT**,NEAT yang menggunakan compositional pattern producing networks (CPPN).
+**ES-HyperNEAT**,Versi HyperNEAT yang adaptif.
+**Novelty Search**,"Algoritma evolusi yang mencari ""kebaruan"" bukan performa."
+**Quality Diversity (QD)**,Kombinasi mencari solusi berkualitas tinggi yang beragam.
+**MAP-Elites**,"Algoritma QD yang menyimpan solusi terbaik untuk setiap ""niche."""
+**CMA-ES**,Algoritma optimasi evolusioner yang sangat efisien.
+**Bayesian Optimization**,Optimasi yang cerdas mencari titik berikutnya untuk dievaluasi. Sering dipakai untuk hyperparameter tuning.
+**Gaussian Process Upper Confidence Bound (GP-UCB)**,Bayesian Optimization dengan trade-off eksplorasi-eksploitasi.
+**Thompson Sampling**,Strategi eksplorasi berbasis sampling dari model Bayesian.
+**Multi-Armed Bandit**,Masalah klasik: memilih mesin slot mana yang paling menguntungkan.
+**LinUCB / LinTS**,Bandit dengan asumsi linear.
+**Contextual Bandit**,"Bandit di mana setiap keputusan memiliki ""konteks."""
+**Doubly Robust Estimation**,Metode evaluasi yang robust untuk bandit dan RL.
+**Propensity Scoring / Inverse Propensity Weighting**,Metode statistik untuk menangani bias seleksi.
+**Causal Forest**,Random Forest untuk estimasi efek kausal.
+**Double Machine Learning**,Menggunakan ML untuk estimasi kausal dengan mengurangi bias.
+**T-Learner / S-Learner / X-Learner / R-Learner**,Framework untuk estimasi efek perlakuan (treatment effect).
+"**Survival Analysis (Cox PH, Random Survival Forest)**","Memprediksi ""waktu hingga kejadian"" (misal: waktu hidup pasien kanker)."
+**DeepSurv**,Neural Network untuk survival analysis.
+**DeepHit**,Deep learning untuk survival analysis dengan multiple events.
+**Multi-Task Learning**,Satu model belajar beberapa tugas sekaligus.
+**Transfer Learning**,Menggunakan model yang sudah dilatih untuk tugas baru.
+**Domain Adaptation**,Transfer learning di mana data training dan testing berasal dari distribusi berbeda.
+**Few-Shot Learning**,Belajar dari sangat sedikit contoh (1-5 contoh per kelas).
+**Zero-Shot Learning**,Mengenali kelas yang tidak pernah dilihat saat training.
+**Continual Learning / Lifelong Learning**,Belajar tugas baru tanpa melupakan tugas lama.
+**Elastic Weight Consolidation (EWC)**,Metode continual learning yang melindungi bobot penting.
+**Progressive Neural Networks**,Menambah kolom jaringan baru untuk setiap tugas baru.
+**PackNet / Piggyback**,Metode continual learning dengan masking parameter.
+**Federated Learning**,Model dilatih di banyak perangkat tanpa data keluar dari perangkat. Contoh: keyboard prediktif di HP.
+**Split Learning**,Federated learning di mana model dibagi antara server dan client.
+**Differential Privacy**,"Menambahkan ""noise"" untuk melindungi privasi data training."
+**Adversarial Training**,Melatih model agar tahan terhadap input yang dimodifikasi sedikit (adversarial examples).
+**Certified Defense (Randomized Smoothing)**,"Memberikan ""sertifikat"" keamanan terhadap serangan adversarial."
+"**Interpretable ML (SHAP, LIME)**",Metode untuk menjelaskan prediksi model.
+**Attention Rollout / Grad-CAM**,"Visualisasi apa yang ""dilihat"" model CNN/Transformer."
+**Concept Bottleneck Model**,"Model yang harus melewati ""konsep"" manusia-dapat-dipahami sebelum memprediksi."
+**Neural Network Gaussian Process (NNGP)**,Teori yang menghubungkan Neural Network dengan Gaussian Process.
+**Neural Tangent Kernel (NTK)**,Kernel yang menjelaskan perilaku Neural Network yang sangat lebar saat training.
+**Mean Field Theory for NN**,Teori fisika untuk memahami dinamika Neural Network besar.
+**Information Bottleneck Theory**,Teori yang menjelaskan bahwa NN belajar dengan mempertahankan informasi relevan dan membuang yang tidak.
+"**Manifold Learning (Isomap, LLE, t-SNE, UMAP)**",Menemukan struktur berdimensi rendah dalam data berdimensi tinggi.
+**Isomap**,Mempertahankan jarak geodesik (jarak terpendek di permukaan).
+**Locally Linear Embedding (LLE)**,Mempertahankan hubungan linear lokal antar data.
+**Laplacian Eigenmaps**,Menggunakan spektrum graph Laplacian untuk embedding.
+**Hessian LLE**,Versi LLE yang memperhatikan kurvatur.
+**LTSA (Local Tangent Space Alignment)**,Menyelaraskan ruang tangen lokal.
+**Sammon Mapping**,Mempertahankan jarak antar data di ruang berdimensi rendah.
+**Multidimensional Scaling (MDS)**,Menemukan representasi berdimensi rendah yang mempertahankan jarak.
+**Non-metric MDS**,"MDS yang hanya mempertahankan urutan jarak, bukan nilai absolut."

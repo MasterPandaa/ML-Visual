@@ -1,0 +1,15 @@
+﻿Model,Penjelasan Singkat
+**Q-Learning**,"Membuat ""tabel nilai"" untuk setiap keadaan dan tindakan. Agent belajar tindakan mana yang paling menguntungkan."
+**Deep Q-Network (DQN)**,Q-Learning dengan Neural Network. Bisa menangani keadaan yang sangat banyak (seperti pixel game).
+**Policy Gradient**,"Langsung mempelajari ""kebijakan"" (tindakan apa yang harus dilakukan), bukan hanya nilai."
+**Actor-Critic**,"Kombinasi: ""Actor"" memutuskan tindakan, ""Critic"" menilai tindakan tersebut."
+**A3C (Asynchronous Advantage Actor-Critic)**,Actor-Critic dengan banyak agent belajar secara paralel.
+**PPO (Proximal Policy Optimization)**,Algoritma policy gradient yang stabil. Dipakai OpenAI untuk melatih robot dan game.
+**TRPO (Trust Region Policy Optimization)**,"Pendahulu PPO, lebih kompleks secara teoritis."
+**SAC (Soft Actor-Critic)**,"Actor-Critic yang memaksimalkan reward sekaligus ""entropy"" (eksplorasi)."
+**TD3 (Twin Delayed Deep Deterministic)**,Versi perbaikan DQN untuk tugas kontinu (seperti mengendalikan robot).
+**DDPG (Deep Deterministic Policy Gradient)**,Policy gradient untuk aksi kontinu.
+**Rainbow DQN**,Kombinasi 6 perbaikan DQN dalam satu algoritma.
+**Monte Carlo Tree Search (MCTS)**,"Mencari keputusan terbaik dengan membangun ""pohon kemungkinan."" Dipakai AlphaGo."
+**AlphaGo / AlphaZero**,Kombinasi Deep Learning + MCTS. AlphaGo mengalahkan juara dunia Go. AlphaZero belajar dari nol tanpa data manusia.
+**MuZero**,AlphaZero yang tidak perlu tahu aturan game. Belajar model dunia dari pengamatan.

@@ -1,5 +1,5 @@
 {
-  "name": "ml-visual-lab-temp",
+  "name": "ml-visual-lab",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,13 +9,20 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "d3": "^7.9.0",
+    "framer-motion": "^12.38.0",
+    "lucide-react": "^1.11.0",
     "next": "16.2.4",
+    "papaparse": "^5.5.3",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "zustand": "^5.0.12"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/d3": "^7.4.3",
     "@types/node": "^20",
+    "@types/papaparse": "^5.5.2",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",

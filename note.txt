@@ -1,0 +1,3 @@
+Rencana ke Depan: Jika aplikasi ini sudah stabil, kita bisa melakukan refactoring untuk memindahkan semua logika matematika tersebut ke lib/algorithms agar folder tersebut lebih lengkap. Namun untuk tahap pengembangan interaktif seperti sekarang, menaruhnya di dalam komponen sangat membantu saya untuk melakukan perbaikan visual secara instan seperti yang kita lakukan tadi.
+
+Apakah Anda ingin kita mulai memindahkan beberapa logika tersebut ke folder algorithms sekarang, atau kita lanjut ke model Deep Learning sesuai rencana awal?

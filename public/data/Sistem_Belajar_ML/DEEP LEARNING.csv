@@ -1,0 +1,11 @@
+﻿Model,Penjelasan Singkat
+**Perceptron**,Neural Network paling sederhana: satu neuron. Seperti saklar lampu yang menyala/mati berdasarkan input.
+**Multi-Layer Perceptron (MLP)**,Perceptron bertingkat-tingkat. Bisa menangani masalah yang lebih kompleks.
+**Convolutional Neural Network (CNN)**,"Spesialis ""melihat."" Menggunakan filter untuk mendeteksi pola seperti tepi, tekstur, bentuk. Raja di pengolahan gambar."
+**Recurrent Neural Network (RNN)**,"Memiliki ""memori"" — output sebelumnya jadi input berikutnya. Cocok untuk data berurutan seperti teks atau waktu."
+**Long Short-Term Memory (LSTM)**,RNN yang tidak mudah lupa. Bisa mengingat informasi dari jauh (misal: kata di awal kalimat penting untuk akhir kalimat).
+**Gated Recurrent Unit (GRU)**,Versi sederhana LSTM yang lebih cepat dan hampir sebagus LSTM.
+**Bidirectional LSTM (Bi-LSTM)**,LSTM yang membaca data dari dua arah (depan dan belakang). Seperti membaca kalimat dari kiri dan kanan bersamaan.
+**Sequence-to-Sequence (Seq2Seq)**,Arsitektur untuk menerjemahkan urutan ke urutan lain. Dasar dari Google Translate awal.
+**Attention Mechanism**,"Membuat model ""fokus"" pada bagian input yang paling relevan. Seperti manusia yang lebih memperhatikan kata kunci saat membaca."
+**Transformer**,Arsitektur revolusioner yang menggantikan RNN/LSTM di banyak tugas. Dasar dari ChatGPT dan model bahasa modern.
