@@ -1,94 +1,51 @@
-# ML-Visual — Interactive Machine Learning & Deep Learning Visualizer
+<p align="center">
+  <img src="https://raw.githubusercontent.com/MasterPandaa/MasterPandaa/main/assets/banners/ML-Visual.svg" alt="ML Algorithm Visualizer Banner" width="100%">
+</p>
 
-[![Next.js](https://img.shields.io/badge/Next.js-16%20(App%20Router)-black?style=flat&logo=next.js&logoColor=white)](#)
-[![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react&logoColor=black)](#)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat&logo=typescript&logoColor=white)](#)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](#)
-[![D3.js](https://img.shields.io/badge/Data_Viz-D3.js%20v7-F9A03C?style=flat&logo=d3.js&logoColor=white)](#)
-[![Motion](https://img.shields.io/badge/Animation-Framer_Motion-FF0055?style=flat)](#)
-[![State](https://img.shields.io/badge/State-Zustand-764ABC?style=flat)](#)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
-An interactive in-browser laboratory for dissecting, simulating, and visualizing **Machine Learning**, **Deep Learning**, and **Reinforcement Learning** algorithms in real time.
-
-Built on **Next.js (App Router)**, **React 19**, **TypeScript**, **D3.js v7**, and **Tailwind CSS v4**, ML-Visual maps mathematical optimization dynamics into responsive, step-by-step vector graphics rendered entirely on the client side.
-
----
+<p align="center">
+  <img src="https://img.shields.io/badge/Framework-Next.js_15_|_React_19-000000?style=flat-square&logo=next.js" alt="Next.js">
+  <img src="https://img.shields.io/badge/Visuals-D3.js_v7-F9A03C?style=flat-square&logo=d3.js" alt="D3.js">
+  <img src="https://img.shields.io/badge/Language-TypeScript_5-3178C6?style=flat-square&logo=typescript" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Execution-100%25_Client--Side-10B981?style=flat-square" alt="Client Side">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-gray?style=flat-square" alt="License"></a>
+</p>
 
 ## Overview
 
-Abstract machine learning mechanics—such as gradient descent convergence, hyperplane margins, synaptic weight updates, and decision boundary partitions—are often difficult to inspect through raw metrics alone. ML-Visual provides an interactive runtime environment to observe how algorithmic models adapt to synthetic and user-supplied data:
+Understanding the mathematical intuition behind machine learning models is notoriously challenging through static equations alone. ML-Visual is an interactive web-based simulator built with **Next.js 15**, **React 19**, and **D3.js (v7)** that lets developers and students inspect algorithm training dynamics in real time.
 
-- **Client-Side Matrix Computations**: Real-time forward-pass simulations, optimization steps, and loss computations execute locally in the browser with zero server latency.
-- **Interactive Hyperparameter Modulation**: Sliders for learning rates, regularization parameters ($\lambda$), polynomial degrees, epoch limits, and activation functions trigger instantaneous visual feedback.
-- **Side-by-Side Model Benchmarking (`/compare`)**: Direct comparative evaluation of two distinct models trained concurrently on identical datasets to assess convergence rate and boundary complexity.
-- **Custom Dataset Ingestion**: Generate standard synthetic distributions (Two Moons, Circles, Blobs) or import custom CSV files via PapaParse.
+All calculations run entirely in the browser using client-side TypeScript, enabling interactive parameter scrubbing, hyperparameter tuning, and instant 2D decision boundary visualization at 60 FPS without server roundtrips.
 
 ---
 
-## Supported Algorithm Paradigms
+## Core Capabilities
 
-| Paradigm | Supported Algorithms | Visual Representation |
-| :--- | :--- | :--- |
-| **Regression** | Linear, Polynomial, Ridge ($L_2$), Lasso ($L_1$), ElasticNet, Huber, Quantile | Fitted curves, residual error vectors, gradient loss surfaces |
-| **Classification** | Logistic Regression, Decision Tree, KNN, SVM (Linear/RBF), Naive Bayes, LDA, QDA | 2D Decision boundaries, support vectors, margin boundaries |
-| **Ensemble Methods** | Random Forest, Extra Trees, AdaBoost, Gradient Boosting, XGBoost, Stacking | Voting planes, sequential residual reduction, feature rankings |
-| **Unsupervised Learning** | K-Means, DBSCAN, Hierarchical Clustering, GMM, PCA, t-SNE, UMAP | Centroid migrations, density reachability, dendrograms, 2D projections |
-| **Deep Learning** | Multilayer Perceptron (MLP), Convolutional Neural Network (CNN) | Layer node activations, synaptic connections, convolutional filters |
-| **Reinforcement Learning** | Q-Learning, Grid World Navigation | Q-table heatmaps, exploration vs exploitation policy trajectories |
+- **Interactive Decision Boundaries**: Live mathematical rendering of linear classification, polynomial boundaries, and support vector hyperplanes.
+- **Real-Time Hyperparameter Tuning**: Adjust learning rate, regularization coefficients, and epoch counts with instant visual feedback.
+- **Idempotent D3.js Architecture**: Prevents duplicate DOM re-renders by enforcing clean SVG update and exit selections.
+- **Synthesized Toy Datasets**: Generate linearly separable, noisy circular, and multi-class spiral coordinate points on demand.
+- **Step-by-Step Training Stepper**: Pause, step forward, or rewind epoch updates to observe weight convergence step by step.
 
 ---
 
-## Architecture & Ecosystem
+## Quickstart
 
-```text
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                            ML-VISUAL ECOSYSTEM                              │
-├──────────────────────┬──────────────────────┬───────────────────────────────┤
-│   Interactive Lab    │   Model Comparator   │        Dataset Sandbox        │
-│ Parameter sliders,   │ Side-by-side model   │ Synthetic benchmarks: Moons,  │
-│ step execution, and  │ evaluation on shared │ Circles, Blobs, Gaussian, or  │
-│ loss convergence.    │ data (/compare).     │ custom uploaded CSV files.    │
-└──────────────────────┴──────────────────────┴───────────────────────────────┘
-```
-
-1. **Simulation Engine**: Step controls (Play, Pause, Step-by-Epoch, Speed Modulation) driving iterative mathematical solvers.
-2. **Dynamic D3.js Renderers**: Isolated SVG canvas components handling coordinate projections, axes, and contours.
-3. **Reactive Global State**: Zustand stores managing model configurations, dataset parameters, and running states.
-
----
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js >= 18.x
-- NPM, PNPM, or Yarn
-
-### Installation
-
-1. **Clone the repository**:
+1. Clone the repository:
    ```bash
    git clone https://github.com/MasterPandaa/ML-Visual.git
    cd ML-Visual
    ```
 
-2. **Install dependencies**:
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-3. **Start the development server**:
+3. Launch development server:
    ```bash
    npm run dev
    ```
    Open `http://localhost:3000` in your browser.
-
-4. **Build for production**:
-   ```bash
-   npm run build
-   npm start
-   ```
 
 ---
 
